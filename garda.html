@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harp City RPC - Control Room & About Us</title>
+  <link rel="stylesheet" href="css/style4.css">
+  <style>
+    /* Additional styling for side-by-side layouts */
+    .fire-brigade-container, .about-section {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      padding: 50px 20px;
+      background-color: #fff;
+    }
+    .fire-brigade-container .text-section,
+    .about-section .about-text {
+      flex: 1;
+      min-width: 300px;
+      padding: 20px;
+      font-size: 18px;
+      line-height: 1.6;
+      color: #333;
+    }
+    .fire-brigade-container .image-section,
+    .about-section .about-image {
+      flex: 1;
+      min-width: 300px;
+      text-align: center;
+      padding: 20px;
+    }
+    .fire-brigade-container .image-section img,
+    .about-section .about-image img {
+      width: 100%;
+      max-width: 400px;
+      height: 400px; /* Force a square image */
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .about-section .about-text h2 {
+      font-size: 32px;
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <header>
+    <div class="logo">
+      <img src="images/logo.jpg" alt="Harp City RPC Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="nav-btn">Home Page</a></li>
+        <li><a href="about.html" class="nav-btn">About Us</a></li>
+        <li><a href="services.html" class="nav-btn">Services</a></li>
+        <li><a href="join.html" class="nav-btn">Join Us</a></li>
+        <li><a href="contact.html" class="nav-btn">Contact Us</a></li>
+      </ul>
+    </nav>
+    <div class="buttons">
+      <a href="signup.html" class="btn">Member Signup</a>
+      <a href="login.html" class="btn">Member Login</a>
+    </div>
+  </header>
+
+  <!-- Control Room Section -->
+  <section id="fire-brigade">
+    <div class="fire-brigade-container">
+      <!-- Text Section on the Left -->
+      <div class="text-section">
+        <h2>AN GARDA SÍOCHÁNA</h2>
+        <p>The AGS An Garda Síochána is Used Inside HCRPC Alot There Are Many Divisions To Choose From Including Community Policing, Roads Policing Unit, Armed Support Unit, Special Detective Unit, Divisional Drug Unit, Public Order Unit And Burgalary Unit.</p>
+        <p>If You'd Like To Apply For The An Garda Síochána Please Do The Application In Join Us!</p>
+        <p>Join us today and be a part of this amazing team dedicated to serving and protecting our community.</p>
+    </div>
+      <!-- Square Image on the Right -->
+      <div class="image-section">
+        <img src="images/hcrpc.png" alt="Control Room">
+      </div>
+    </div>
+  </section>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harp City RPC</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <header>
+    <div class="logo">
+      <img src="images/logo.jpg" alt="Harp City RPC Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="#join">Join Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="buttons">
+      <a href="signup.html" class="btn">Signup</a>
+      <a href="login.html" class="btn">Login</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Harp City RPC</h1>
+      <p>The Best Irish Qb-Core Roleplay Experience</p>
+      <a href="https://discord.gg/n4ydkx2eaw" class="btn">Join Our Discord</a>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="fade-in">
+    <h2>Our Services</h2>
+    <div class="service-grid">
+      <div class="service">Dublin Fire Brigade</div>
+      <div class="service">An Garda Síochána</div>
+      <div class="service">National Ambulance Service</div>
+      <div class="service">Civilian Operations</div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Harp City RPC. All rights reserved.</p>
+  </footer>
+
+  <script>
+    gsap.from(".hero-content h1", { duration: 1, y: -50, opacity: 0, ease: "power3.out" });
+    gsap.from(".hero-content p", { duration: 1.2, y: 30, opacity: 0, delay: 0.5, ease: "power3.out" });
+    gsap.from(".hero-content .btn", { duration: 1.5, scale: 0.8, opacity: 0, delay: 1, ease: "power3.out" });
+
+    document.addEventListener("scroll", function () {
+      document.querySelectorAll(".fade-in").forEach((section) => {
+        if (section.getBoundingClientRect().top < window.innerHeight - 50) {
+          gsap.to(section, { duration: 1, opacity: 1, y: 0, ease: "power3.out" });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
