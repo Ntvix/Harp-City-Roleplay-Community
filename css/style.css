@@ -1,0 +1,259 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navigation Bar Logo Image */
+.logo-img {
+    width: 40px; /* Adjust width as needed */
+    height: 40px; /* Maintain aspect ratio */
+}
+
+/* Navigation Bar */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #003366;
+    color: white;
+    padding: 15px 30px;
+}
+
+.logo img {
+    width: 40px;
+    height: auto;
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.buttons .btn {
+    background: #1100ff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Navigation Bar Links */
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+/* Highlight the link when hovered */
+nav ul li a:hover {
+    color: #ffcc00; /* Highlight color */
+    font-weight: bold;
+}
+
+/* Navigation Button Styling */
+.nav-btn {
+    background-color: #1100ff; /* Button color */
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Change color on hover */
+.nav-btn:hover {
+    background-color: #003366;
+    color: #ffcc00;
+}
+
+
+/* Change color on hover */
+.nav-btn:hover {
+    background-color: #003366;
+    color: #ffcc00;
+}
+
+
+/* Hero Section (Slideshow Background) with Wavy Effect */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    color: white;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    animation: slideShow 20s infinite;
+    overflow: hidden;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url('http://127.0.0.1:5500/images/wave.svg') repeat-x;
+    background-size: contain;
+}
+
+.hero .hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.hero .btn {
+    background: #101138;
+    padding: 15px 20px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Services Section */
+#services {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.service {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    height: 200px; /* Reduced size */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.service::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.service strong {
+    font-size: 24px; /* Adjusted size */
+    font-weight: bold;
+    position: relative;
+    z-index: 2;
+}
+
+.service button {
+    margin-top: 10px;
+    padding: 8px 16px; /* Adjusted size */
+    background: rgba(29, 28, 99, 0.9);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background 0.3s;
+    position: relative;
+    z-index: 2;
+}
+
+.service button:hover {
+    background: rgb(4, 0, 240);
+}
+
+/* Background images for services */
+.service:nth-child(1) { background-image: url('http://127.0.0.1:5500/images/fire.jpg'); }
+.service:nth-child(2) { background-image: url('http://127.0.0.1:5500/images/police.jpg'); }
+.service:nth-child(3) { background-image: url('http://127.0.0.1:5500/images/ambulance.jpg'); }
+.service:nth-child(4) { background-image: url('http://127.0.0.1:5500/images/civilian.jpg'); }
+.service:nth-child(5) { background-image: url('http://127.0.0.1:5500/images/control.jpg'); }
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: white;
+}
+
+/* Keyframes for slideshow */
+@keyframes slideShow {
+    0% { background-image: url('http://127.0.0.1:5500/images/1.jpg'); }
+    10% { background-image: url('http://127.0.0.1:5500/images/2.jpg'); }
+    20% { background-image: url('http://127.0.0.1:5500/images/3.jpg'); }
+    30% { background-image: url('http://127.0.0.1:5500/images/4.jpg'); }
+    40% { background-image: url('http://127.0.0.1:5500/images/5.jpg'); }
+    50% { background-image: url('http://127.0.0.1:5500/images/6.jpg'); }
+    60% { background-image: url('http://127.0.0.1:5500/images/7.jpg'); }
+    70% { background-image: url('http://127.0.0.1:5500/images/8.jpg'); }
+    80% { background-image: url('http://127.0.0.1:5500/images/9.jpg'); }
+    90% { background-image: url('http://127.0.0.1:5500/images/10.jpg'); }
+    100% { background-image: url('http://127.0.0.1:5500/images/11.jpg'); }
+}
+
+/* Discord Button */
+.discord-btn {
+    background-color: #7289da; /* Discord Blue */
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.discord-btn:hover {
+    background-color: #5b6eae; /* Darker Discord Blue */
+}
+

@@ -1,0 +1,154 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navigation Bar */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #003366;
+    color: white;
+    padding: 15px 30px;
+}
+
+.logo img {
+    width: 40px;
+    height: auto;
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.buttons .btn {
+    background: #1100ff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Navigation Bar Links */
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+/* Highlight the link when hovered */
+nav ul li a:hover {
+    color: #ffcc00; /* Highlight color */
+    font-weight: bold;
+}
+
+/* Navigation Button Styling */
+.nav-btn {
+    background-color: #1100ff; /* Button color */
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Change color on hover */
+.nav-btn:hover {
+    background-color: #003366;
+    color: #ffcc00;
+}
+
+
+/* Fire Brigade Section Layout */
+#fire-brigade {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #fff;
+    gap: 30px;
+}
+
+.fire-brigade-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.image-section {
+    flex: 1;
+    text-align: center;
+}
+
+.image-section img {
+    width: 600px; /* Square image size */
+    height: 600px;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.text-section {
+    flex: 2;
+    padding: 20px;
+}
+
+.text-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.text-section p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 60px;
+    background: rgb(0, 8, 114);
+    color: rgb(255, 255, 255);
+}
+
+/* Discord Button */
+.discord-btn {
+    background-color: #7289da; /* Discord Blue */
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.discord-btn:hover {
+    background-color: #5b6eae; /* Darker Discord Blue */
+}
