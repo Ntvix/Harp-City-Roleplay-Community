@@ -114,7 +114,7 @@ nav ul li a:hover {
     left: 0;
     width: 100%;
     height: 100px;
-    background: url('http://127.0.0.1:5500/images/wave.svg') repeat-x;
+    background: url('images/wave.svg') repeat-x;
     background-size: contain;
 }
 
@@ -211,11 +211,11 @@ nav ul li a:hover {
 }
 
 /* Background images for services */
-.service:nth-child(1) { background-image: url('http://127.0.0.1:5500/images/fire.jpg'); }
-.service:nth-child(2) { background-image: url('http://127.0.0.1:5500/images/police.jpg'); }
-.service:nth-child(3) { background-image: url('http://127.0.0.1:5500/images/ambulance.jpg'); }
-.service:nth-child(4) { background-image: url('http://127.0.0.1:5500/images/civilian.jpg'); }
-.service:nth-child(5) { background-image: url('http://127.0.0.1:5500/images/control.jpg'); }
+.service:nth-child(1) { background-image: url('images/fire.jpg'); }
+.service:nth-child(2) { background-image: url('images/police.jpg'); }
+.service:nth-child(3) { background-image: url('images/ambulance.jpg'); }
+.service:nth-child(4) { background-image: url('images/civilian.jpg'); }
+.service:nth-child(5) { background-image: url('images/control.jpg'); }
 
 /* Footer */
 footer {
@@ -227,17 +227,17 @@ footer {
 
 /* Keyframes for slideshow */
 @keyframes slideShow {
-    0% { background-image: url('http://127.0.0.1:5500/images/1.jpg'); }
-    10% { background-image: url('http://127.0.0.1:5500/images/2.jpg'); }
-    20% { background-image: url('http://127.0.0.1:5500/images/3.jpg'); }
-    30% { background-image: url('http://127.0.0.1:5500/images/4.jpg'); }
-    40% { background-image: url('http://127.0.0.1:5500/images/5.jpg'); }
-    50% { background-image: url('http://127.0.0.1:5500/images/6.jpg'); }
-    60% { background-image: url('http://127.0.0.1:5500/images/7.jpg'); }
-    70% { background-image: url('http://127.0.0.1:5500/images/8.jpg'); }
-    80% { background-image: url('http://127.0.0.1:5500/images/9.jpg'); }
-    90% { background-image: url('http://127.0.0.1:5500/images/10.jpg'); }
-    100% { background-image: url('http://127.0.0.1:5500/images/11.jpg'); }
+    0% { background-image: url('images/1.jpg'); }
+    10% { background-image: url('images/2.jpg'); }
+    20% { background-image: url('images/3.jpg'); }
+    30% { background-image: url('images/4.jpg'); }
+    40% { background-image: url('images/5.jpg'); }
+    50% { background-image: url('images/6.jpg'); }
+    60% { background-image: url('images/7.jpg'); }
+    70% { background-image: url('images/8.jpg'); }
+    80% { background-image: url('images/9.jpg'); }
+    90% { background-image: url('images/10.jpg'); }
+    100% { background-image: url('images/11.jpg'); }
 }
 
 /* Discord Button */
